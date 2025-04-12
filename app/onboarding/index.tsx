@@ -47,10 +47,11 @@ const Onboarding = () => {
   return (
     <View className='flex-1 bg-black px-5 items-center pt-36 gap-20'>
 
-      <Button className='absolute top-10 right-5 ' onPress={() => {
+      <Button className='absolute top-10 right-0 z-20 ' onPress={() => {
+
         router.replace('/auth/signup')
       }}>
-        <Text className='text-white text font-semibold'>Skip</Text>
+        <Text className='text-white text-xl font-semibold'>Skip</Text>
       </Button>
       <View className='absolute left-0 right-0  h-[500px] '>
         <BlurCircle />
@@ -120,7 +121,6 @@ function OnboardingItem({ item, index }: OnboardingItemProps) {
   return (
     <Animated.View className='gap-20'>
       <Animated.View
-        // entering={FadeInUp.delay(500)}
         style={[animateStyle]} className=' items-center justify-center'>
         {/* <View className='w-40 h-40 absolute bg-white rounded-full '/> */}
         <Image source={item?.image} className='aspect-square self-center' style={{
@@ -136,7 +136,7 @@ function OnboardingItem({ item, index }: OnboardingItemProps) {
           contentFit='contain'
         />
       </Animated.View>
-      <Animated.View entering={FadeInUp.delay(500)} className='self-start gap-3'>
+      <Animated.View entering={FadeInUp.delay(200)} className='self-start gap-3'>
         <View className='w-2/3'>
           <Text className='text-white font-medium text-3xl '>
             {item?.title}

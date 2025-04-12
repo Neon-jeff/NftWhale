@@ -2,14 +2,18 @@ import { View } from 'react-native'
 import React from 'react'
 import { Text } from '@/components/ui/text'
 import { Redirect } from 'expo-router'
+import AnimatedSplash from '@/components/splash'
 
 const Index = () => {
-  if(true){
+  if(!false){
     return <Redirect href='/onboarding' />
   }
   return (
-    <View className='p-10'>
-      <Text className='text-4xl mt-10 '>Index page</Text>
+    <View className='p-10 flex-1 bg-black justify-center '>
+      <AnimatedSplash/>
+      <Text className='text-white text-center text-lg font-semibold  -translate-y-24'>
+        Open Whale
+      </Text>
     </View>
   )
 }
