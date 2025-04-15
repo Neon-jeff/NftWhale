@@ -31,7 +31,7 @@ const Trending = () => {
         }
     ]
   return (
-    <View className='mx-5 pt-5 gap-4'>
+    <View className='mx-5 pt-10 gap-4'>
      <View className='flex-row items-center justify-between'>
      <Text className='text-gray-300 text-lg'>All Collections</Text>
      <View className='flex-row gap-1 items-center'>
@@ -63,8 +63,8 @@ function BestSellerCard ({name,image}:{name:string,image:string}){
                 </Text>
                 <Text className='text-white text-lg font-extrabold'>0.07Eth</Text>
                 </View>
-                <Pressable className='p-2 bg-black rounded-full'>
-                    <ArrowUpRight size={18} color={'lightgray'}/>
+                <Pressable className='p-3 bg-black rounded-full'>
+                    <ArrowUpRight size={22} color={'lightgray'}/>
                 </Pressable>
             </View>
         </View>

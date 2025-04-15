@@ -9,6 +9,7 @@ import nft4 from '@/assets/images/onboarding/3dblob.png'
 import {FlashList} from '@shopify/flash-list'
 import { size } from '@/constants/sizes'
 import { ArrowUpRight } from 'lucide-react-native'
+import { NFTCard } from '../cards'
 
 const TopSellers = () => {
     const data = [
@@ -34,7 +35,7 @@ const TopSellers = () => {
       <Text className='text-gray-300 text-lg'>Top Sellers</Text>
        <FlashList
             data={data}
-            renderItem={({item,index})=>( <BestSellerCard {...item}/>)}
+            renderItem={({item,index})=>( <NFTCard {...item}/>)}
             horizontal
             estimatedItemSize={300}
             keyExtractor={(item)=>`key-flashlist-${item.name}`}

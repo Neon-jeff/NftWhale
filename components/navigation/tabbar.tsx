@@ -23,7 +23,7 @@ const TabBar = ({ state, descriptors, navigation }: TabBarProps) => {
     }
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable)
     return (
-        <View className='bg-zinc-900/90 border border-gray-500/20 bottom-28 rounded-full  p-4 py-1 h-20 w-[90%] self-center flex-row items-center  justify-center gap-10' style={{
+        <View className='bg-zinc-900/90 border border-gray-500/20 bottom-32 rounded-full  p-4  h-20 w-[80%] self-center flex-row items-center  justify-center gap-10' style={{
             backdropFilter:''
         }}>
             {

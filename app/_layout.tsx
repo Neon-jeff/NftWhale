@@ -20,7 +20,7 @@ import 'react-native-reanimated'
 SplashScreen.preventAutoHideAsync()
 
 export const unstable_settings = {
-    initialRouteName: 'onboarding',
+    initialRouteName: 'index',
 }
 const RootLayout = () => {
     const [loaded] = useFonts({
@@ -45,8 +45,8 @@ const RootLayout = () => {
     return (
         <>
             <Stack screenOptions={{ headerShown: false }}>
-                <Stack.Screen name='onboarding' />
                 <Stack.Screen name='index' />
+                <Stack.Screen name='onboarding' />
                 <Stack.Screen name='auth' />
             </Stack>
 

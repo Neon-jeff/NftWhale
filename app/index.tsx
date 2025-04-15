@@ -6,7 +6,7 @@ import AnimatedSplash from '@/components/splash'
 
 const Index = () => {
   if(!false){
-    return <Redirect href='/onboarding' />
+    return <Redirect href='/(tabs)/explore' />
   }
   return (
     <View className='p-10 flex-1 bg-black justify-center '>
